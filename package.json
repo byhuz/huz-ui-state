@@ -1,0 +1,56 @@
+{
+  "name": "@byhuz/huz-ui-state",
+  "version": "0.1.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "storybook": "start-storybook -p 9009",
+    "build-storybook": "build-storybook",
+    "build": "rollup --config",
+    "watch": "rollup --config --watch --environment DEVELOPMENT",
+    "deploy": "npm install && npm run build && npm publish --access public",
+    "test": "node ./test/index.js"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "redux": "^4.0.5",
+    "react-redux": "^7.2.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.6.0",
+    "axios": "^0.19.0",
+    "is-function": "^1.0.1",
+    "qs": "^6.9.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.9.0",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "string-format": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/plugin-transform-runtime": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "@rollup/plugin-replace": "^2.3.1",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-backgrounds": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addon-viewport": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/react": "^5.3.18",
+    "babel-loader": "^8.0.6",
+    "rollup": "^1.21.4",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-terser": "^5.3.0",
+    "yaml": "^1.10.0"
+  }
+}
