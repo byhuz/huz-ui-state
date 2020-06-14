@@ -37,7 +37,7 @@ const commonPlugins = (config) => [
     runtimeHelpers: true,
   }),
   replace({ "process.env.NODE_ENV": JSON.stringify(env) }),
-  terser(),
+  // terser(),
 ];
 
 export default [
