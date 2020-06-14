@@ -47,18 +47,17 @@ export default [
       esModule: false,
       dir: "dist/iife",
       format: "iife",
-      name: "HuzUIProject",
+      name: "HuzUIState",
       exports: "named",
       globals: {
         react: "React",
         "react-dom": "ReactDOM",
         redux: "Redux",
-        "react-redux": "ReactRedux",
-        axios: "axios",
+        "react-redux": "ReactRedux"
       },
     },
     plugins: commonPlugins({ includeDependencies: false }),
-    external: ["react", "react-dom", "redux", "react-redux", "axios"],
+    external: ["react", "react-dom", "redux", "react-redux"],
   },
   {
     input: getChunks(`src`),
@@ -77,6 +76,6 @@ export default [
       },
     ],
     plugins: commonPlugins({ includeDependencies: true }),
-    external: ["react", "react-dom", "redux", "react-redux", "axios"],
+    external: ["react", "react-dom", "redux", "react-redux"],
   },
 ];
