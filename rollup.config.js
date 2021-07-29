@@ -36,7 +36,7 @@ const commonPlugins = (config) => [
     plugins: [["@babel/plugin-transform-runtime"]],
     runtimeHelpers: true,
   }),
-  replace({ "process.env.NODE_ENV": JSON.stringify(env) }),
+  replace({ "process.env.NODE_ENV": JSON.stringify(env),preventAssignment:true }),
   terser(),
 ];
 

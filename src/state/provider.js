@@ -1,6 +1,6 @@
 import React from "react";
 import { createStore } from "redux";
-import { Provider } from "react-redux";
+import { Provider, useSelector } from "react-redux";
 import reducer from "./reducer";
 
 const debug = true;
@@ -15,4 +15,4 @@ const store = debug
 
 const provider = ({ children }) => <Provider store={store}>{children}</Provider>;
 
-export { provider as Provider, store as Store };
+export { provider as Provider, store as Store, useSelector };
